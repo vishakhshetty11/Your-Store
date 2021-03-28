@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>sugar-cane-jaggery</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	
+</head>
+<body>
+	<div class="container">
+		<div  class="navbar">
+			<div class="logo">
+				<h2>YoUr StOrE</h2>
+			</div>
+			<nav>
+				<ul class="list" id="MenuItems">
+					<li>
+						<form>
+							<input type="text" name="search" placeholder="search">
+							<input type="submit" name="search_bt" value="search">
+						</form>
+					</li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="login.html">Login</a></li>
+				</ul>
+				<ul>
+					<li></li><a href="#"><img src="cart.png" class="cart" width="30px" height="30px"></a></li>
+					<li><img src="menu.png" class="menu" width= "20px" height= "20px" onclick="menutoggle()"></li>
+				</ul>
+			</nav>
+		</div>
+	</div>	
+
+<!---------------------------Items------------------------>
+
+	<div class="Small-container">
+		<div class="row">
+		  	<div class="column">
+		    	<img src="sugar-cane-jaggery-500x500.jpg" width="80%" height="100%">
+		 	</div>
+		  	<div class="column">
+		    	<h3>jaggery</h3>
+			    <h4>₹48</h4>
+			    <input type="number" name="Quantity" value="1"><p>Quantity</p></br>
+			    <a href=""><h5 class="add">+Add</h5></a>
+			    <a href="" class="btn">Buy Now</a>
+		 	</div>
+		 	
+		</div>
+	</div>
+
+
+<!---------------------------Related Products------------------------>
+
+
+
+	<!---------------------------Footer------------------------>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row2">
+				<div class="foot-col">
+					<ul>
+						<a href="Contact_us.html"><li>Contact us</li></a>
+						<a href=""><li>About us</li></a>
+						<a href="login.html"><li>Login</li></a>
+						<a href="SignUp.html"><li>Sihn Up</li></a>
+					</ul>
+				</div>
+				<div class="foot-col">
+					<h3>Follow Us</h3>
+					<ul>
+						<a href=""><li>Face Book</li></a>
+						<a href=""><li>Twitter</li></a>
+						<a href=""><li>Instagram</li></a>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="Copyright">Copyright 2021 - My Store</p>
+		</div>
+	</div>
+	<!------------------------JS for Menue----------------------------->
+		<script type="text/javascript">
+			var MenuItems = document.getElementById("MenuItems");
+				MenuItems.style.maxHeight = "0px";
+
+				function menutoggle()
+				{
+					if (MenuItems.style.maxHeight == "0px") 
+					{
+						MenuItems.style.maxHeight = "200px";
+					}
+					else
+					{
+						MenuItems.style.maxHeight = "0px";
+					}
+				}
+		</script>
+</body>
+</html>

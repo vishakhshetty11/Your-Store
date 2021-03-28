@@ -1,0 +1,76 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: url(2020-10-26.jpg);
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+.loginbox
+{
+	width: 420px;
+	height: 520px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 65%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+
+h2
+{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.loginbox input
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.loginbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 19px;
+	border-radius: 20px;	
+}
+.loginbox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+.loginbox a
+{
+	text-decoration: none;
+	font-size: 15px
+	line-height:20px;
+	color: darkgrey;
+	padding-bottom: 20px;
+}
+.loginbox a:hover
+{
+	color: #ffc107;
+}

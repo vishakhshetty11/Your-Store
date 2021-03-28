@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Your Store</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	
+</head>
+<body>
+	<div class="container">
+		<div  class="navbar">
+			<div class="logo">
+				<h2>YoUr StOrE</h2>
+			</div>
+			<nav>
+				<ul class="list" id="MenuItems">
+					<li>
+						<form>
+							<input type="text" name="search" placeholder="search">
+							<input type="submit" name="search_bt" value="search">
+						</form>
+					</li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="login.html">Login</a></li>
+				</ul>
+				<ul class="uls">
+					<li></li><a href="#"><img src="cart.png" class="cart" width="30px" height="30px"></a></li>
+					<li><img src="menu.png" class="menu" width= "20px" height= "20px" onclick="menutoggle()"></li>
+				</ul>
+			</nav>
+		</div>
+	</div>	
+
+<!---------------------------Items------------------------>
+
+	<div class="items">
+		<select>
+			<option>Default</option>
+			<option>Snacks</option>
+			<option>Grocery</option>
+		</select>
+			<div class="row">
+				<div class="col-4">
+					<a href="product.html"><img src="kerala-brown-rice-500x500.jpeg"></a>
+					<a href="product.html"><h4>Brown Rice</h4></a>
+					<h5>₹58</h5>
+					<a href=""><h5 class="add">+Add</h5></a>
+					<a href="" class="btn">Buy Now</a>
+				</div>
+				<div class="col-4">
+					<a href="product1.html"><img src="DSC_1339-500x500.jpg"></a>
+					<a href="product1.html"><h4>Ole Bella</h4></a>
+					<h5>₹60</h5>
+					<a href=""><h5 class="add">+Add</h5></a>
+					<a href="" class="btn">Buy Now</a>
+				</div>
+				<div class="col-4">
+					<a href="product2.html"><img src="sugar-cane-jaggery-500x500.jpg"></a>
+					<a href="product2.html"><h4>jaggery</h4></a>
+					<h5>₹40</h5>
+					<a href=""><h5 class="add">+Add</h5></a>
+					<a href="" class="btn">Buy Now</a>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-4">
+					<a href="product.html"><img src="kerala-brown-rice-500x500.jpeg"></a>
+					<a href="product.html"><h4>Brown Rice</h4></a>
+					<h5>₹58</h5>
+					<a href=""><h5 class="add">+Add</h5></a>
+					<a href="" class="btn">Buy Now</a>
+				</div>
+				<div class="col-4">
+					<a href="product1.html"><img src="DSC_1339-500x500.jpg"></a>
+					<a href="product1.html"><h4>Ole Bella</h4></a>
+					<h5>₹60</h5>
+					<a href=""><h5 class="add">+Add</h5></a>
+					<a href="" class="btn">Buy Now</a>
+				</div>
+				<div class="col-4">
+					<a href="product2.html"><img src="sugar-cane-jaggery-500x500.jpg"></a>
+					<a href="product2.html"><h4>jaggery</h4></a>
+					<h5>₹40</h5>
+					<a href=""><h5 class="add">+Add</h5></a>
+					<a href="" class="btn">Buy Now</a>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-4">
+					<a href="product.html"><img src="kerala-brown-rice-500x500.jpeg"></a>
+					<a href="product.html"><h4>Brown Rice</h4></a>
+					<h5>₹58</h5>
+					<a href=""><h5 class="add">+Add</h5></a>
+					<a href="" class="btn">Buy Now</a>
+				</div>
+				<div class="col-4">
+					<a href="product1.html"><img src="DSC_1339-500x500.jpg"></a>
+					<a href="product1.html"><h4>Ole Bella</h4></a>
+					<h5>₹60</h5>
+					<a href=""><h5 class="add">+Add</h5></a>
+					<a href="" class="btn">Buy Now</a>
+				</div>
+				<div class="col-4">
+					<a href="product2.html"><img src="sugar-cane-jaggery-500x500.jpg"></a>
+					<a href="product2.html"><h4>jaggery</h4></a>
+					<h5>₹40</h5>
+					<a href=""><h5 class="add">+Add</h5></a>
+					<a href="" class="btn">Buy Now</a>
+				</div>
+			</div>	
+	</div>
+
+	<!---------------------------Footer------------------------>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row2">
+				<div class="foot-col">
+					<ul>
+						<a href="Contact_us.html"><li>Contact us</li></a>
+						<a href="About_us.html"><li>About us</li></a>
+						<a href="login.html"><li>Login</li></a>
+						<a href="SignUp.html"><li>Sign Up</li></a>
+					</ul>
+				</div>
+				<div class="foot-col">
+					<h3>Follow Us On</h3>
+					<ul>
+						<a href=""><li>Face Book</li></a>
+						<a href=""><li>Twitter</li></a>
+						<a href=""><li>Instagram</li></a>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="Copyright">Copyright 2021 - My Store</p>
+		</div>
+	</div>
+	<!------------------------JS for Menue----------------------------->
+		<script type="text/javascript">
+			var MenuItems = document.getElementById("MenuItems");
+				MenuItems.style.maxHeight = "0px";
+
+				function menutoggle()
+				{
+					if (MenuItems.style.maxHeight == "0px") 
+					{
+						MenuItems.style.maxHeight = "200px";
+					}
+					else
+					{
+						MenuItems.style.maxHeight = "0px";
+					}
+				}
+		</script>
+</body>
+</html>
